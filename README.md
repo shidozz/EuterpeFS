@@ -28,7 +28,7 @@ Avant de plonger dans les détails techniques, comprenons les principes fondamen
 Chaque système de fichiers Euterpe commence par un en-tête spécifique qui contient des informations essentielles pour la gestion des données. L'en-tête est structuré comme suit :
 
 - `magic` (0-2): Trois caractères identifiant le système de fichiers (EFS).
-- `size_bloc` (3-6): Taille d'un bloc de données.
+- `size_block` (3-6): Taille d'un bloc de données.
 - `max_block` (7-10): Nombre maximum de blocs de données.
 - `free_block` (11-14): Nombre de blocs de données disponibles.
 - `version` (15-15): Numéro de version du système de fichiers (actuellement 1).
