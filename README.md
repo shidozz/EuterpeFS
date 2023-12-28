@@ -34,7 +34,7 @@ Avant de plonger dans les détails techniques, comprenons les principes fondamen
 
 #### Windows
 
-1) Télécharge (W64DevKit)[https://github.com/skeeto/w64devkit/releases/tag/v1.21.0]
+1) Télécharge [W64DevKit](https://github.com/skeeto/w64devkit/releases/tag/v1.21.0)
 2) Extrait le dans un dossier et ajoute Path\To\w64devkit\bin dans les variables d'environnement
 3) Lance un invité de commande et écrit ```sh gcc efs.c -o efs.exe```
 
