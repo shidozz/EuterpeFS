@@ -4,6 +4,9 @@
 
 - [Introduction](#introduction)
   - [Principes Fondamentaux](#principes-fondamentaux)
+- [Tools](#tools)
+  - [Compilation](#Compilation)
+  - [Utilisation](#Utilisation)
 - [En-tête (Header)](#en-tête-header)
 - [Entrées (Entries)](#entrées-entries)
 - [Permissions](#permissions)
@@ -22,6 +25,24 @@ Le Euterpe FileSystem (EFS) est un système de fichiers axé sur la facilité d'
 ### Principes Fondamentaux
 
 Avant de plonger dans les détails techniques, comprenons les principes fondamentaux qui guident la conception du EFS.
+
+## Tools
+
+### Compilation
+
+```sh
+gcc efs.c -o efs
+```
+
+### Utilisation
+
+```sh
+Usage: ./efs [-h] [-d {disk_filename}] [-t {type}]
+Options:
+  -d  Specify disk filename
+  -t  Specify type (e.g., mbr, gpt)
+  -h  Display this help message
+```
 
 ## En-tête (Header)
 
