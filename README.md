@@ -5,8 +5,10 @@
 - [Introduction](#introduction)
   - [Principes Fondamentaux](#principes-fondamentaux)
 - [Tools](#tools)
-  - [Compilation](#Compilation)
-  - [Utilisation](#Utilisation)
+  - [Compilation](#compilation)
+    - [Windows](#windows)
+    - [Linux](#linux)
+  - [Utilisation](#utilisation)
 - [En-tête (Header)](#en-tête-header)
 - [Entrées (Entries)](#entrées-entries)
 - [Permissions](#permissions)
@@ -29,6 +31,14 @@ Avant de plonger dans les détails techniques, comprenons les principes fondamen
 ## Tools
 
 ### Compilation
+
+#### Windows
+
+1) Télécharge (W64DevKit)[https://github.com/skeeto/w64devkit/releases/tag/v1.21.0]
+2) Extrait le dans un dossier et ajoute Path\To\w64devkit\bin dans les variables d'environnement
+3) Lance un invité de commande et écrit ```sh gcc efs.c -o efs.exe```
+
+#### Linux
 
 ```sh
 gcc efs.c -o efs
