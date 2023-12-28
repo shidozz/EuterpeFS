@@ -193,11 +193,12 @@ int readEFSDisk(disk_t *_disk){
 }
 
 void EFSHelp(const char *program_name){
-    printf("Usage: %s [-h] [-d {disk_filename}] [-t {type}]\n", program_name);
+    printf("Usage: %s [-h] [-d {disk_filename}] [-t {type}] [-f {true/false}]\n", program_name);
     printf("Options:\n");
     printf("  -d  Specify disk filename\n");
     printf("  -t  Specify type (e.g., mbr, gpt)\n");
     printf("  -h  Display this help message\n");
+    printf("  -f  Format the disk (e.g., true, false)\n");
 }
 
 // Fonction pour écrire l'en-tête SFS dans un fichier
