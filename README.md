@@ -4,6 +4,11 @@
 
 - [Introduction](#introduction)
   - [Principes Fondamentaux](#principes-fondamentaux)
+- [Tools](#tools)
+  - [Compilation](#compilation)
+    - [Windows](#windows)
+    - [Linux](#linux)
+  - [Utilisation](#utilisation)
 - [En-tête (Header)](#en-tête-header)
 - [Entrées (Entries)](#entrées-entries)
 - [Permissions](#permissions)
@@ -22,6 +27,33 @@ Le Euterpe FileSystem (EFS) est un système de fichiers axé sur la facilité d'
 ### Principes Fondamentaux
 
 Avant de plonger dans les détails techniques, comprenons les principes fondamentaux qui guident la conception du EFS.
+
+## Tools
+
+### Compilation
+
+#### Windows
+
+1) Télécharge [W64DevKit](https://github.com/skeeto/w64devkit/releases/tag/v1.21.0)
+2) Extrait le dans un dossier et ajoute Path\To\w64devkit\bin dans les variables d'environnement
+3) Lance un invité de commande et écrit ```sh gcc efs.c -o efs.exe```
+
+#### Linux
+
+```sh
+gcc efs.c -o efs
+```
+
+### Utilisation
+
+```sh
+Usage: ./efs [-h] [-d {disk_filename}] [-t {type}] [-f {true/false}]
+Options:
+  -d  Specify disk filename
+  -t  Specify type (e.g., mbr, gpt)
+  -h  Display this help message
+  -f  Format the disk (e.g., true, false)
+```
 
 ## En-tête (Header)
 
