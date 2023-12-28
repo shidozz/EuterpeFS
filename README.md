@@ -47,11 +47,12 @@ gcc efs.c -o efs
 ### Utilisation
 
 ```sh
-Usage: ./efs [-h] [-d {disk_filename}] [-t {type}]
+Usage: ./efs [-h] [-d {disk_filename}] [-t {type}] [-f {true/false}]
 Options:
   -d  Specify disk filename
   -t  Specify type (e.g., mbr, gpt)
   -h  Display this help message
+  -f  Format the disk (e.g., true, false)
 ```
 
 ## En-tête (Header)
